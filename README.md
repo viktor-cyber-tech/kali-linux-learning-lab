@@ -1,8 +1,12 @@
-# Kali Linux on VirtualBox — Windows Setup Guide
+# Kali Linux Learning Lab
 
 [![Platform](https://img.shields.io/badge/Host-Windows_10%2F11-0078D4?logo=windows11)](https://www.microsoft.com/windows)
 [![VirtualBox](https://img.shields.io/badge/Hypervisor-Oracle_VirtualBox-183A61?logo=virtualbox)](https://www.virtualbox.org/)
 [![Kali Linux](https://img.shields.io/badge/Guest-Kali_Linux-557C94?logo=kalilinux)](https://www.kali.org/)
+
+Hands-on documentation for building Kali Linux skills through safe labs, tools, networking, scripts, CTF practice, and troubleshooting.
+
+## Module 01 — Kali Linux on VirtualBox (Windows)
 
 A beginner-friendly, screenshot-driven guide to installing Oracle VirtualBox and running the official prebuilt Kali Linux VirtualBox image on Windows. This method keeps Kali isolated from the host OS, supports snapshots, and avoids a full ISO installation.
 
