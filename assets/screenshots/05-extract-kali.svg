@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">Extract Kali archive with 7-Zip</title><desc id="desc">Illustrated Windows File Explorer context menu selecting Extract to with 7-Zip.</desc>
+  <rect width="1440" height="900" fill="#0b1220"/><rect x="80" y="65" width="1280" height="770" rx="18" fill="#f8fafc"/><rect x="80" y="65" width="1280" height="70" rx="18" fill="#e5e7eb"/><text x="130" y="109" font-family="Segoe UI,Arial" font-size="24" fill="#111827">Downloads — File Explorer</text>
+  <rect x="120" y="180" width="1160" height="70" rx="10" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/><text x="160" y="225" font-family="Segoe UI,Arial" font-size="24" fill="#111827">kali-linux-current-virtualbox-amd64.7z</text><text x="1100" y="225" font-family="Segoe UI,Arial" font-size="22" fill="#475569">7-Zip archive</text>
+  <rect x="430" y="275" width="560" height="420" rx="16" fill="#fff" stroke="#94a3b8" stroke-width="2"/><text x="470" y="330" font-family="Segoe UI,Arial" font-size="24" fill="#334155">Open</text><text x="470" y="385" font-family="Segoe UI,Arial" font-size="24" font-weight="700" fill="#183a61">7-Zip</text><line x1="470" y1="410" x2="950" y2="410" stroke="#cbd5e1"/>
+  <text x="500" y="465" font-family="Segoe UI,Arial" font-size="23" fill="#475569">Open archive</text><text x="500" y="520" font-family="Segoe UI,Arial" font-size="23" fill="#475569">Extract files...</text>
+  <rect x="475" y="550" width="480" height="70" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/><text x="505" y="594" font-family="Segoe UI,Arial" font-size="23" font-weight="700" fill="#1d4ed8">Extract to “kali-linux-current-...\”</text>
+  <text x="112" y="790" font-family="Segoe UI,Arial" font-size="21" fill="#475569">Move the extracted folder to C:\VMs\Kali before adding it to VirtualBox.</text>
+  <text x="80" y="875" font-family="Segoe UI,Arial" font-size="20" fill="#94a3b8">Illustrative walkthrough • File names change with each Kali release</text>
+</svg>

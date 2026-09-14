@@ -1,0 +1,11 @@
+# Local VM files are intentionally excluded from this documentation repository.
+*.vdi
+*.vbox-prev
+*.sav
+*.ova
+*.ovf
+*.iso
+*.7z
+Snapshots/
+Logs/
+
