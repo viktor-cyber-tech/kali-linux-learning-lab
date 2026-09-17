@@ -69,7 +69,37 @@ For the U.S. setup shown here, choose **North America**.
 
 Then choose **United States**. This sets the locale and helps the installer select the correct time zone. Choose your own region and country if you live elsewhere.
 
-Follow the remaining installer prompts for keyboard, time zone, username, password, partitions, and desktop packages. Guided partitioning is appropriate for this virtual disk because it does not touch the Windows host disk.
+![Kali installer keyboard selection with American English selected](../assets/screenshots/16-keyboard-selection.png)
+
+Choose the keyboard layout you normally use. For this U.S. setup, select **American English**.
+
+### Network identity
+
+![Kali installer hostname prompt](../assets/screenshots/17-hostname.png)
+
+Use a short, generic hostname such as `kali-lab` or `kali-learning-lab`; do not use your full name. This only identifies the VM on your local network.
+
+![Kali installer domain-name prompt left blank](../assets/screenshots/18-domain-name.png)
+
+Leave the domain-name field blank for a personal VirtualBox lab unless you own and administer a domain that belongs there.
+
+### Create the local account
+
+![Kali installer full-name prompt with the entry redacted](../assets/screenshots/19-full-name-redacted.png)
+
+Enter a display name for the account. The screenshot entry is redacted because personal account details do not belong in a public guide.
+
+![Kali installer username prompt with the entry redacted](../assets/screenshots/20-username-redacted.png)
+
+Next, choose a lowercase username you are comfortable using in terminal commands. Create a long, unique password and store it in a password manager; do not publish or screenshot it.
+
+### Set the clock and partition the virtual disk
+
+Choose the time zone that matches where you live. Then select **Guided — use entire disk** and choose the Kali virtual disk—not any Windows host disk. Because this is the 80 GB VDI created above, guided partitioning only changes the VM's virtual disk.
+
+![Kali installer partitioning scheme with all files in one partition selected](../assets/screenshots/21-partition-scheme.png)
+
+For a first Kali lab, select **All files in one partition (recommended for new users)**. Finish partitioning and confirm the write changes prompt. Continue with the desktop/package choices, then let the installer complete.
 
 ## 5. Finish and eject the ISO
 
