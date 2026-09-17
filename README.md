@@ -10,7 +10,19 @@ Hands-on documentation for building Kali Linux skills through safe labs, tools, 
 
 A beginner-friendly, screenshot-driven guide to installing Oracle VirtualBox and running the official prebuilt Kali Linux VirtualBox image on Windows. This method keeps Kali isolated from the host OS, supports snapshots, and avoids a full ISO installation.
 
-For the real, privacy-reviewed installer screenshots, see the [manual ISO installation guide](docs/iso-install.md). The front page intentionally keeps the prebuilt-VM overview image-free.
+For the real, privacy-reviewed installer screenshots, see the [manual ISO installation guide](docs/iso-install.md). The prebuilt-VM overview below intentionally contains no illustrative images.
+
+## Real setup screenshots
+
+These privacy-reviewed screenshots document the manual ISO path covered in full in [docs/iso-install.md](docs/iso-install.md).
+
+![VirtualBox set to Linux, Debian 64-bit, with unattended installation disabled](assets/screenshots/08-vm-os-selection.png)
+
+![VirtualBox hardware settings with 4096 MB memory and two CPUs](assets/screenshots/10-virtual-hardware.png)
+
+![Kali installer software selection with Xfce and the default tools](assets/screenshots/23-software-selection.png)
+
+![Kali installer reports that installation is complete](assets/screenshots/26-installation-complete.png)
 
 > [!IMPORTANT]
 > Use Kali Linux only on systems and networks you own or have explicit permission to test. Start with VirtualBox **NAT** networking. Do not use **Bridged Adapter** merely because a lab says “networking”—bridging places the VM directly on the local network.
@@ -190,7 +202,7 @@ See [docs/troubleshooting.md](docs/troubleshooting.md) for fixes covering:
 ├── scripts/
 │   └── verify-kali-hash.ps1
 └── assets/screenshots/
-    └── 01–07 walkthrough images
+    └── Real installer walkthrough images
 ```
 
 ## Educational use
