@@ -101,9 +101,31 @@ Choose the time zone that matches where you live. Then select **Guided — use e
 
 For a first Kali lab, select **All files in one partition (recommended for new users)**. Finish partitioning and confirm the write changes prompt. Continue with the desktop/package choices, then let the installer complete.
 
+![Kali installer confirmation to write changes to the virtual disk](../assets/screenshots/22-write-partition-changes.png)
+
+Confirm **Yes** only after checking that the listed device is Kali's virtual disk. The installer then formats and installs to the VDI; it does not alter the Windows host disk.
+
+### Software selection
+
+![Kali installer software selection with Xfce and default tools selected](../assets/screenshots/23-software-selection.png)
+
+Keep the default **Xfce** desktop and the default tool collection selected. It is a sensible baseline for a learning VM; install additional toolsets later only when you have a specific lab or course need.
+
+### Install GRUB
+
+![Kali installer prompt to install the GRUB boot loader](../assets/screenshots/24-install-grub.png)
+
+Select **Yes** to install GRUB. Since this is a dedicated Kali VM, it is the only operating system on its virtual disk.
+
+![Kali installer GRUB device selection with the VM identifier redacted](../assets/screenshots/25-grub-device-redacted.png)
+
+Select **`/dev/sda`**, the virtual disk shown by the installer. Do not choose a manually entered device.
+
 ## 5. Finish and eject the ISO
 
-After installation, reboot. If the installer starts again, power off the VM and remove the ISO from **Settings → Storage** or change the boot order so the virtual hard disk comes first.
+![Kali installer completion screen](../assets/screenshots/26-installation-complete.png)
+
+Select **Continue** to reboot. Remove the ISO when prompted. If the installer starts again, power off the VM and remove the ISO from **Settings → Storage** or change the boot order so the virtual hard disk comes first.
 
 ## 6. Update and verify guest tools
 
