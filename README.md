@@ -62,7 +62,7 @@ Do not assign every CPU core or more than half of the host's RAM to the VM.
 
 Open **Task Manager → Performance → CPU**. Confirm that **Virtualization** says **Enabled**. If it is disabled, enable Intel Virtualization Technology/VT-x or AMD-V/SVM in BIOS/UEFI before continuing.
 
-![Check Windows virtualization](assets/screenshots/01-check-virtualization.svg)
+![Check Windows virtualization](assets/screenshots/01-check-virtualization.png)
 
 ### 2. Download and install VirtualBox
 
@@ -74,7 +74,7 @@ Open **Task Manager → Performance → CPU**. Confirm that **Virtualization** s
 
 The **Extension Pack is optional** for this guide. Install the matching version only if you need features such as VirtualBox USB 2.0/3.0 support, and review Oracle's license first.
 
-![Download VirtualBox for Windows](assets/screenshots/02-download-virtualbox.svg)
+![Download VirtualBox for Windows](assets/screenshots/02-download-virtualbox.png)
 
 ### 3. Download the official Kali VirtualBox image
 
@@ -83,7 +83,7 @@ The **Extension Pack is optional** for this guide. Install the matching version 
 3. Download the current **VirtualBox 64-bit** point-release image—not the VMware image and not the installer ISO.
 4. Download the matching checksum from the same page or copy the published SHA256 value.
 
-![Choose the Kali VirtualBox image](assets/screenshots/03-download-kali-vbox.svg)
+![Choose the Kali VirtualBox image](assets/screenshots/03-download-kali-vbox.png)
 
 ### 4. Verify the download
 
@@ -95,7 +95,7 @@ Get-FileHash .\kali-linux-*-virtualbox-amd64.7z -Algorithm SHA256
 
 Compare the output with the SHA256 published next to the current VirtualBox image on Kali's download page. They must match exactly. You can also use the helper in [`scripts/verify-kali-hash.ps1`](scripts/verify-kali-hash.ps1).
 
-![Verify the Kali archive checksum](assets/screenshots/04-verify-sha256.svg)
+![Verify the Kali archive checksum](assets/screenshots/04-verify-sha256.png)
 
 ### 5. Extract the Kali archive
 
@@ -104,7 +104,7 @@ Compare the output with the SHA256 published next to the current VirtualBox imag
 3. Select **7-Zip → Extract to “kali-linux-…-virtualbox-amd64\\”**.
 4. Keep the extracted folder in a permanent location, such as `C:\VMs\Kali`. Do not run the VM from Downloads if you regularly clean that folder.
 
-![Extract the Kali archive](assets/screenshots/05-extract-kali.svg)
+![Extract the Kali archive](assets/screenshots/05-extract-kali.png)
 
 ### 6. Add the VM to VirtualBox
 
@@ -115,7 +115,7 @@ Compare the output with the SHA256 published next to the current VirtualBox imag
 
 This is an **Add** workflow, not **Import Appliance**. Kali's current prebuilt archive contains the VirtualBox configuration and virtual disk.
 
-![Add the Kali vbox file](assets/screenshots/06-add-vm.svg)
+![Add the Kali vbox file](assets/screenshots/06-add-vm.png)
 
 ### 7. Review safe settings and start Kali
 
@@ -135,7 +135,7 @@ Username: kali
 Password: kali
 ```
 
-![Review settings and start Kali](assets/screenshots/07-start-kali.svg)
+![Review settings and start Kali](assets/screenshots/07-start-kali.png)
 
 ### 8. Secure and update the VM
 
