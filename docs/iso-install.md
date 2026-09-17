@@ -23,6 +23,11 @@ In VirtualBox Manager, select **New** and use:
 
 A dynamically allocated disk grows as data is written; it does not immediately consume the full 80 GB.
 
+![VirtualBox New Virtual Machine wizard with the Kali installer ISO selected](../assets/screenshots/08-vm-name-and-iso.png)
+
+> [!NOTE]
+> This is the real VM-creation screen from this lab. The Kali installer ISO is selected, **OS Distribution** and **OS Version** are set to **Debian (64-bit)**, and unattended installation is disabled. Continue to configure the virtual hardware and disk before clicking **Finish**.
+
 ## 3. Tune the VM before first boot
 
 - **System → Boot Order:** Hard Disk first, Optical second
@@ -57,4 +62,3 @@ Official references:
 
 - [Kali inside VirtualBox](https://www.kali.org/docs/virtualization/install-virtualbox-guest-vm/)
 - [VirtualBox User Manual](https://www.virtualbox.org/manual/UserManual.html)
-
