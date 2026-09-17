@@ -32,6 +32,18 @@ A dynamically allocated disk grows as data is written; it does not immediately c
 
 Leave **Set up unattended guest OS installation** at its defaults. Specifically, keep **Proceed with Unattended Installation** unchecked and leave **Install Guest Additions** unchecked. Kali's installer will run normally, allowing you to choose your own account and password during setup; guest tools can be repaired later if needed.
 
+### Configure virtual hardware
+
+![VirtualBox virtual hardware settings with 4096 MB RAM and 2 CPUs](../assets/screenshots/10-virtual-hardware.png)
+
+For this 32 GB host, use **4096 MB** of base memory and **2 CPUs**. Leave **Use EFI** unchecked. On an 8 GB host, use 2048 MB instead; do not give Kali more than half of the host's RAM or every available CPU.
+
+### Create the virtual hard disk
+
+![VirtualBox virtual hard disk settings](../assets/screenshots/11-virtual-hard-disk.png)
+
+Select **Create a New Virtual Hard Disk**, keep **VDI (VirtualBox Disk Image)** selected, and leave **Pre-allocate Full Size** and **Split Disk into 2 GB Parts** unchecked. Change the shown **20 GB** disk size to **80 GB** before clicking **Finish**. The VDI is dynamically allocated, so it will grow as Kali uses space rather than immediately consuming 80 GB.
+
 ## 3. Tune the VM before first boot
 
 - **System → Boot Order:** Hard Disk first, Optical second
