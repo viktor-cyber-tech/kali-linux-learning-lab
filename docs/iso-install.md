@@ -28,6 +28,10 @@ A dynamically allocated disk grows as data is written; it does not immediately c
 > [!NOTE]
 > This is the real VM-creation screen from this lab. The Kali installer ISO is selected, **OS Distribution** and **OS Version** are set to **Debian (64-bit)**, and unattended installation is disabled. Continue to configure the virtual hardware and disk before clicking **Finish**.
 
+![VirtualBox unattended guest OS installation settings left at their defaults](../assets/screenshots/09-unattended-defaults.png)
+
+Leave **Set up unattended guest OS installation** at its defaults. Specifically, keep **Proceed with Unattended Installation** unchecked and leave **Install Guest Additions** unchecked. Kali's installer will run normally, allowing you to choose your own account and password during setup; guest tools can be repaired later if needed.
+
 ## 3. Tune the VM before first boot
 
 - **System → Boot Order:** Hard Disk first, Optical second
