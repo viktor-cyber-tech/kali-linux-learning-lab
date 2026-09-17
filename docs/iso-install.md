@@ -61,6 +61,10 @@ Open **Settings → Storage**, select the empty optical drive, choose the disk i
 
 At this menu, use the arrow keys to highlight the first option, **Graphical install**, then press **Enter**. The **Install with speech synthesis** option shown in this screenshot is an accessibility option; use it only if you need speech output.
 
+![Kali installer language selection with English selected](../assets/screenshots/13-language-selection.png)
+
+Choose **English** (or your preferred language), then select **Continue**. This choice becomes the default language for the installed Kali system.
+
 Follow the installer prompts to choose language, keyboard, time zone, username, password, partitions, and desktop packages. Guided partitioning is appropriate for this virtual disk because it does not touch the Windows host disk.
 
 ## 5. Finish and eject the ISO
