@@ -10,6 +10,8 @@ Hands-on documentation for building Kali Linux skills through safe labs, tools, 
 
 A beginner-friendly, screenshot-driven guide to installing Oracle VirtualBox and running the official prebuilt Kali Linux VirtualBox image on Windows. This method keeps Kali isolated from the host OS, supports snapshots, and avoids a full ISO installation.
 
+For the real, privacy-reviewed installer screenshots, see the [manual ISO installation guide](docs/iso-install.md). The front page intentionally keeps the prebuilt-VM overview image-free.
+
 > [!IMPORTANT]
 > Use Kali Linux only on systems and networks you own or have explicit permission to test. Start with VirtualBox **NAT** networking. Do not use **Bridged Adapter** merely because a lab says “networking”—bridging places the VM directly on the local network.
 
@@ -62,8 +64,6 @@ Do not assign every CPU core or more than half of the host's RAM to the VM.
 
 Open **Task Manager → Performance → CPU**. Confirm that **Virtualization** says **Enabled**. If it is disabled, enable Intel Virtualization Technology/VT-x or AMD-V/SVM in BIOS/UEFI before continuing.
 
-![Check Windows virtualization](assets/screenshots/01-check-virtualization.png)
-
 ### 2. Download and install VirtualBox
 
 1. Open the [official VirtualBox downloads page](https://www.virtualbox.org/wiki/Downloads).
@@ -74,16 +74,12 @@ Open **Task Manager → Performance → CPU**. Confirm that **Virtualization** s
 
 The **Extension Pack is optional** for this guide. Install the matching version only if you need features such as VirtualBox USB 2.0/3.0 support, and review Oracle's license first.
 
-![Download VirtualBox for Windows](assets/screenshots/02-download-virtualbox.png)
-
 ### 3. Download the official Kali VirtualBox image
 
 1. Open [Get Kali](https://www.kali.org/get-kali/).
 2. Choose **Virtual Machines**.
 3. Download the current **VirtualBox 64-bit** point-release image—not the VMware image and not the installer ISO.
 4. Download the matching checksum from the same page or copy the published SHA256 value.
-
-![Choose the Kali VirtualBox image](assets/screenshots/03-download-kali-vbox.png)
 
 ### 4. Verify the download
 
@@ -95,16 +91,12 @@ Get-FileHash .\kali-linux-*-virtualbox-amd64.7z -Algorithm SHA256
 
 Compare the output with the SHA256 published next to the current VirtualBox image on Kali's download page. They must match exactly. You can also use the helper in [`scripts/verify-kali-hash.ps1`](scripts/verify-kali-hash.ps1).
 
-![Verify the Kali archive checksum](assets/screenshots/04-verify-sha256.png)
-
 ### 5. Extract the Kali archive
 
 1. Install [7-Zip](https://www.7-zip.org/) if needed.
 2. Right-click the downloaded `.7z` file.
 3. Select **7-Zip → Extract to “kali-linux-…-virtualbox-amd64\\”**.
 4. Keep the extracted folder in a permanent location, such as `C:\VMs\Kali`. Do not run the VM from Downloads if you regularly clean that folder.
-
-![Extract the Kali archive](assets/screenshots/05-extract-kali.png)
 
 ### 6. Add the VM to VirtualBox
 
@@ -114,8 +106,6 @@ Compare the output with the SHA256 published next to the current VirtualBox imag
 4. Select the file ending in `.vbox`, then choose **Open**.
 
 This is an **Add** workflow, not **Import Appliance**. Kali's current prebuilt archive contains the VirtualBox configuration and virtual disk.
-
-![Add the Kali vbox file](assets/screenshots/06-add-vm.png)
 
 ### 7. Review safe settings and start Kali
 
@@ -134,8 +124,6 @@ Start the VM. The official prebuilt image currently uses:
 Username: kali
 Password: kali
 ```
-
-![Review settings and start Kali](assets/screenshots/07-start-kali.png)
 
 ### 8. Secure and update the VM
 
