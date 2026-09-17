@@ -15,7 +15,7 @@ In VirtualBox Manager, select **New** and use:
 | Name | Kali Linux |
 | Type | Linux |
 | Version | Debian (64-bit) |
-| RAM | 2048 MB on an 8 GB host; 4096 MB on a 16 GB+ host |
+| RAM | 4096 MB on this 32 GB host |
 | CPUs | 2 |
 | Disk format | VDI |
 | Allocation | Dynamically allocated |
@@ -23,26 +23,22 @@ In VirtualBox Manager, select **New** and use:
 
 A dynamically allocated disk grows as data is written; it does not immediately consume the full 80 GB.
 
-![VirtualBox New Virtual Machine wizard with the Kali installer ISO selected](../assets/screenshots/08-vm-name-and-iso.png)
+![VirtualBox New Virtual Machine wizard set to Linux and Debian 64-bit, with unattended installation disabled](../assets/screenshots/08-vm-os-selection.png)
 
 > [!NOTE]
-> This is the real VM-creation screen from this lab. The Kali installer ISO is selected, **OS Distribution** and **OS Version** are set to **Debian (64-bit)**, and unattended installation is disabled. Continue to configure the virtual hardware and disk before clicking **Finish**.
+> This cropped lab screen shows the correct guest type: **Linux → Debian (64-bit)**. Keep **Proceed with Unattended Installation** unchecked, then configure the virtual hardware and disk before clicking **Finish**.
 
-![VirtualBox unattended guest OS installation settings left at their defaults](../assets/screenshots/09-unattended-defaults.png)
-
-Leave **Set up unattended guest OS installation** at its defaults. Specifically, keep **Proceed with Unattended Installation** unchecked and leave **Install Guest Additions** unchecked. Kali's installer will run normally, allowing you to choose your own account and password during setup; guest tools can be repaired later if needed.
+Leave **Set up unattended guest OS installation** alone: **Proceed with Unattended Installation** must remain unchecked. Kali's installer will then run normally, letting you choose your own account and password during setup. Leave **Install Guest Additions** unchecked; guest tools can be repaired later if needed.
 
 ### Configure virtual hardware
 
 ![VirtualBox virtual hardware settings with 4096 MB RAM and 2 CPUs](../assets/screenshots/10-virtual-hardware.png)
 
-For this 32 GB host, use **4096 MB** of base memory and **2 CPUs**. Leave **Use EFI** unchecked. On an 8 GB host, use 2048 MB instead; do not give Kali more than half of the host's RAM or every available CPU.
+For this 32 GB host, use **4096 MB** of base memory and **2 CPUs**. Leave **Use EFI** unchecked. Do not give Kali more than half of the host's RAM or every available CPU.
 
 ### Create the virtual hard disk
 
-![VirtualBox virtual hard disk settings](../assets/screenshots/11-virtual-hard-disk.png)
-
-Select **Create a New Virtual Hard Disk**, keep **VDI (VirtualBox Disk Image)** selected, and leave **Pre-allocate Full Size** and **Split Disk into 2 GB Parts** unchecked. Change the shown **20 GB** disk size to **80 GB** before clicking **Finish**. The VDI is dynamically allocated, so it will grow as Kali uses space rather than immediately consuming 80 GB.
+Select **Create a New Virtual Hard Disk**, keep **VDI (VirtualBox Disk Image)** selected, and leave **Pre-allocate Full Size** and **Split Disk into 2 GB Parts** unchecked. Set the virtual disk maximum to **80 GB** before clicking **Finish**. The VDI is dynamically allocated, so it grows as Kali uses space rather than immediately consuming 80 GB.
 
 ## 3. Tune the VM before first boot
 
@@ -65,7 +61,15 @@ At this menu, use the arrow keys to highlight the first option, **Graphical inst
 
 Choose **English** (or your preferred language), then select **Continue**. This choice becomes the default language for the installed Kali system.
 
-Follow the installer prompts to choose language, keyboard, time zone, username, password, partitions, and desktop packages. Guided partitioning is appropriate for this virtual disk because it does not touch the Windows host disk.
+![Kali installer region selection with North America selected](../assets/screenshots/14-region-selection.png)
+
+For the U.S. setup shown here, choose **North America**.
+
+![Kali installer location selection with United States selected](../assets/screenshots/15-country-selection.png)
+
+Then choose **United States**. This sets the locale and helps the installer select the correct time zone. Choose your own region and country if you live elsewhere.
+
+Follow the remaining installer prompts for keyboard, time zone, username, password, partitions, and desktop packages. Guided partitioning is appropriate for this virtual disk because it does not touch the Windows host disk.
 
 ## 5. Finish and eject the ISO
 
