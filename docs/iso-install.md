@@ -57,6 +57,10 @@ Select **Create a New Virtual Hard Disk**, keep **VDI (VirtualBox Disk Image)** 
 
 Open **Settings → Storage**, select the empty optical drive, choose the disk icon, and select the downloaded Kali ISO. Start the VM and choose **Graphical install**.
 
+![Kali Linux installer boot menu in VirtualBox](../assets/screenshots/12-kali-installer-menu.png)
+
+At this menu, use the arrow keys to highlight the first option, **Graphical install**, then press **Enter**. The **Install with speech synthesis** option shown in this screenshot is an accessibility option; use it only if you need speech output.
+
 Follow the installer prompts to choose language, keyboard, time zone, username, password, partitions, and desktop packages. Guided partitioning is appropriate for this virtual disk because it does not touch the Windows host disk.
 
 ## 5. Finish and eject the ISO
